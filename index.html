@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyfeindex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    
+</head>
+<body>
+    <div class="image-container">
+    <img src="/globe.png" alt="logo"  id="backgroundImage" width="300">
+    <div class="search-bar">
+    <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+            <button class="search-button" onclick="search()">Search</button>
+        </div>
+    </div>
+
+    <section>
+        <input type="checkbox" id="check">
+        <header>
+            <h2><a href="a" class="logo"></a></h2>
+            <div class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Info</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <label for="check">
+                <i class="fas fa-bars menu-btn"></i>
+                <i class="fas fa-times close-btn"></i>
+            </label>
+        </header>
+        <div class="content">
+            <div class="info">
+                <img src="/circle-logo.png" alt="logo" width="250">
+                <h2>Lyfe Index: <br><span>Preserving Every Story, Honoring Every Legacy</span></h2>
+                <p>"In the tapestry of humanity, every thread is vital. Lyfe Index ensures that no story is left untold."</p>
+                <a href="#" class="info-btn">Add Memorial</a>
+            </div>
+        </div>
+        <div class="flex static md:hidden xl:flex xl:absolute top-6  md:w-full left-[-24px]  justify-around m-8">
+            <div class="left flex flex-col gap-5 md:absolute right-[-4rem]">
+                <div class="single"><h4>England</h4><p>383 000+</p></div>
+                <div class="single md:left-6 md:relative"><h4>россия</h4><p>756 000+</p></div>
+                <div class="single md:left-10 md:relative"><h4>España</h4><p>717 000+</p></div>
+                <div class="single md:left-6 md:relative"><h4>中国</h4><p>231 000</p></div>
+                <div class="single"><h4>Polska</h4><p>490 000+</p>
+                </div>
+            </div>
+            
+
+            <div class="right  flex flex-col gap-5 left md:absolute left-[-5rem]">
+                <div class="single"><h4>भारत</h4><p>292 000+</p></div>
+                <div class="single  md:right-6 md:relative"><h4>دبي</h4><p>617 000+</p></div>
+                <div class="single single md:right-10 md:relative"><h4>la France</h4><p>362 000+</p></div>
+                <div class="single single md:right-6 md:relative"><h4>Italia</h4><p>718 000+</p></div>
+                <div class="single"><h4>português</h4><p>074 000+</p></div>
+            </div>
+        </div>
+        
+        <div class="media-icon">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <script>
+        function search() {
+            var searchTerm = document.getElementById('searchInput').value;
+            alert('Performing search for: ' + searchTerm);
+            // Implement your search functionality here
+        }
+    </script>
+</body>
+</html>
